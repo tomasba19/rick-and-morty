@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
-
 .titulo{
    width: 100%;
    text-align: center;
    font-family: 'Creepster', cursive;
    font-size: 8em;
+   text-shadow: 4px 8px 8px #000000;
    color: #08BAE3;
    z-index: 50;
    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.884);
    padding-bottom: 20px;
 }
-
-
 .App {
    text-align: center;
    padding: 20px 30px;
@@ -22,11 +20,9 @@
    padding-top: 5px;
    padding-left: 15px;
    padding-right: 15px;
-   
 }
 .pickle{
    text-align: right;
-
 }
 .pickle button{
    font-family: 'Creepster', cursive;
@@ -42,4 +38,3 @@
    transition: all .5s ease-in-out;
    filter: brightness(1.7);
 }
-

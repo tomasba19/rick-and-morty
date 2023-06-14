@@ -2,68 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 .card{
-    margin: 5px;
-    margin-top: 1px;
-    padding: 15px;
-    padding-top: 0px;
-    width: 250px;
-    background-color: rgb(110, 37, 86);
-    height: 400px;
-    font-size: 1em;
-    font-family: 'Oswald', sans-serif;
-    justify-content: center;
-    border: 4px solid ;
-    border-color: black;
+	margin: 5px;
+	margin-top: 1px;
+	padding: 15px;
+	padding-top: 0px;
+	width: 250px;
+	background-color: rgb(110, 37, 86);
+	height: 400px;
+	font-size: 1em;
+	font-family: 'Oswald', sans-serif;
+	justify-content: center;
+	border: 4px solid ;
+	border-color: black;
 }
-
 .card img{
-    width: 180px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+	width: 180px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-
 .info{
-    text-align: center;
-    height: 150px;
-    margin-bottom: 2px;
+	text-align: center;
+	height: 150px;
+	margin-bottom: 2px;
 }
 .info h2:hover{
-    cursor: pointer;
-    transition: all .5s ease-in-out; 
-    filter: brightness(1.8);
-
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+	filter: brightness(1.8);
 }
 .info h2{
-    margin: 0%;
-    background-color: rgba(43, 43, 40, 0.507);
-    text-align: center;
-    border: 2px solid black;
-    
-    
+	margin: 0%;
+	background-color: rgba(43, 43, 40, 0.507);
+	text-align: center;
+	border: 2px solid black;
 }
-
 .imagen img{
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(1, 1, 1, 1); 
-    
-    
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px rgba(1, 1, 1, 1);
 }
 .imagen img:hover{
-    cursor: pointer;
-    transition: all .5s ease-in-out; 
-    filter: brightness(1.2);
-    
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+	filter: brightness(1.2);
 }
-
-
 .close{
-    text-align: right;
+	text-align: right;
 }
 .close button{
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-    font-family: 'Creepster', cursive;
-    font-size: xx-large;
-    margin-top: 0px;
-    cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+	font-family: 'Creepster', cursive;
+	font-size: xx-large;
+	margin-top: 0px;
+	cursor: pointer;
 }

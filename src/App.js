@@ -24,7 +24,7 @@ function App() {
       setCharacters(newCharacters);
    }
    
-   return (
+return (
    
       <div className='App'>
          <div className="pickle">

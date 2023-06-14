@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 /*'Creepster', cursive;  font-family: 'Oswald', sans-serif;*/ 
+
 .search{
     height: 100px;
     display: inline-block;
     margin: 10px;
     padding: 10px;
     border-radius: 12px;
-    
-
-    
 }
 .search button {
     border-radius: 8px;
@@ -23,7 +21,6 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
     width: 80px;
     height: 40px;   
-    
 }
 .search button:hover{
     border: 2px;
@@ -34,5 +31,4 @@
     height: 30px;
     font-size: 20px;
     padding: 10px;
-    
 }
