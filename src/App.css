@@ -15,8 +15,10 @@
 
 .App {
    text-align: center;
-   padding: 2px 30px;
-   background-image: url("https://www.xtrafondos.com/wallpapers/resoluciones/20/la-ultima-cena-de-rick-y-morty_1920x1080_6568.jpg");
+   padding: 20px 30px;
+   background-image: url('./Images/background.jpg');
+   background-size: cover;
+   height: 1080px;
    
 }
 
