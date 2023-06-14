@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     justify-content: space-around;
-    justify-items: center
+    justify-items: center;
+    margin-top: 80px;
 }
 
 @media screen and (max-width:825px){

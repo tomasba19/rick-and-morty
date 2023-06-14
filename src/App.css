@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-.App {
-   text-align: center;
-   padding: 2px 30px;
-   
-}
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 
 .titulo{
    width: 100%;
    text-align: center;
-   font-family:'Oswald', sans-serif;;
+   font-family: 'Creepster', cursive;
    font-size: 8em;
    color: #08BAE3;
    z-index: 50;
    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.884);
    padding-bottom: 20px;
 }
+
+
+.App {
+   text-align: center;
+   padding: 2px 30px;
+   background-image: url("https://www.xtrafondos.com/wallpapers/resoluciones/20/la-ultima-cena-de-rick-y-morty_1920x1080_6568.jpg");
+   
+}
+
+

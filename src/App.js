@@ -25,10 +25,11 @@ function App() {
    }
    
    return (
+   
       <div className='App'>
-         <div class="titulo">Rick And Morty</div>
-         <NavBar onSearch={onSearch}/>
-         <Cards characters={characters} onClose={onClose} />
+         <div className="titulo">Rick And Morty</div>
+            <div className='search'><NavBar onSearch={onSearch}/></div>
+               <div className='characters'><Cards characters={characters} onClose={onClose} /></div>
          
       </div>
    );

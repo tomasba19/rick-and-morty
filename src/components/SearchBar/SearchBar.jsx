@@ -16,12 +16,12 @@ export default function SearchBar({ onSearch }) {
                <button>I'M PICKLE RICK!</button>
                </a>
          </div>
-         <label>ID</label>
          <input type='search'
                 onChange={handleChange}
                 value={id}
+                placeholder="Search by ID"
          />
-         <button onClick={() =>{onSearch(id); setId('')}}>Add!</button> 
+         <button onClick={() =>{onSearch(id); setId('')}}>Search!</button> 
       </div>
       
    );

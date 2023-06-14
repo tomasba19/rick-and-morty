@@ -3,5 +3,11 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(77, 188, 216);
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
+
+
+
+
+
