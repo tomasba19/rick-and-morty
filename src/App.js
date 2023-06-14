@@ -27,6 +27,11 @@ function App() {
    return (
    
       <div className='App'>
+         <div className="pickle">
+               <a href="https://www.youtube.com/watch?v=ML5UI-0JS_Q" target="_blank" rel="noopener noreferrer">
+               <button>I'M PICKLE RICK!</button>
+               </a>
+         </div>
          <div className="titulo">Rick And Morty</div>
             <div className='search'><NavBar onSearch={onSearch}/></div>
                <div className='characters'><Cards characters={characters} onClose={onClose} /></div>

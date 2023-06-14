@@ -11,11 +11,6 @@ export default function SearchBar({ onSearch }) {
 
    return (
       <div className="search">
-         <div className="pickle">
-               <a href="https://www.youtube.com/watch?v=ML5UI-0JS_Q" target="_blank" rel="noopener noreferrer">
-               <button>I'M PICKLE RICK!</button>
-               </a>
-         </div>
          <input type='search'
                 onChange={handleChange}
                 value={id}
