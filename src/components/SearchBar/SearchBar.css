@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
+.search label{
+    margin: 3px;
+    padding:3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    
+}
+.search{
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    
+
+    
+}
+.search button {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: silver;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    width: 100px;
+    height: 50px;   
+}
+.search button:hover{
+    border: 2px;
+}
+.pickle button{
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 10px;
+    background-color: green;
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    border: 4px solid greenyellow;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    
+    
+}
+.search input{
+    font-family: 'Oswald', sans-serif;
+    width: auto;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import React from 'react';
 import Cards from './components/Cards/Cards.jsx'
@@ -26,6 +26,7 @@ function App() {
    
    return (
       <div className='App'>
+         <div class="titulo">Rick And Morty</div>
          <NavBar onSearch={onSearch}/>
          <Cards characters={characters} onClose={onClose} />
          

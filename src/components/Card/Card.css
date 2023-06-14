@@ -1,0 +1,11 @@
+.card{
+    margin: 8px;
+    padding: 8px;
+    width: 150px;
+    background-color: aquamarine;
+
+}
+
+.card img{
+    width: 140px;
+}
