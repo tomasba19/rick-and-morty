@@ -3,7 +3,10 @@ import './App.css';
 import React from 'react';
 import Cards from './components/Cards/Cards.jsx'
 import NavBar from './components/NavBar/NavBar.jsx';
+import About from './components/About/About.jsx';
+import Detail from './components/Detail/Detail.jsx';
 import axios from 'axios';
+import { Routes, Route} from 'react-router-dom';
 
 function App() {
    const[characters, setCharacters] = useState([]);
@@ -30,12 +33,15 @@ return (
          <div className="pickle">
                <a href="https://www.youtube.com/watch?v=ML5UI-0JS_Q" target="_blank" rel="noopener noreferrer">
                <button>I'M PICKLE RICK!</button>
-               </a>
+               </a>    
          </div>
          <div className="titulo">Rick And Morty</div>
-            <div className='search'><NavBar onSearch={onSearch}/></div>
-               <div className='characters'><Cards characters={characters} onClose={onClose} /></div>
-         
+         <NavBar onSearch={onSearch}/>
+            <Routes>
+               <Route path={'/Home'} element={<Cards characters={characters} onClose={onClose} />}/>
+               <Route path={'/About'} element={<About/>}/>
+               <Route path={'/Detail/:id'} element={<Detail/>}/>
+            </Routes>
       </div>
    );
 }
