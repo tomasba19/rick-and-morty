@@ -19,6 +19,9 @@ export default function NavBar({onSearch, setAccess}) {
             <button>
                 <Link to = {'/home'}>Home</Link>
             </button>
+            <button>
+                <Link to = {'/favorites'}>Favorites</Link>
+            </button>
             <button onClick={handleLogOut}>Log Out</button>
             <SearchBar onSearch={onSearch}/>
         </div>

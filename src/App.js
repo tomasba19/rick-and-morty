@@ -8,6 +8,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import About from './components/About/About.jsx';
 import Detail from './components/Detail/Detail.jsx';
 import Form from './components/Form/Form.jsx';
+import Favorites from './components/Favorites/Favorites';
 
 import { Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 
@@ -61,6 +62,7 @@ return (
                <Route path={'/Home'} element={<Cards characters={characters} onClose={onClose} />}/>
                <Route path={'/About'} element={<About/>}/>
                <Route path={'/Detail/:id'} element={<Detail/>}/>
+               <Route path={'/Favorites'} element={<Favorites/>}/>
             </Routes>
       </div>
    );
