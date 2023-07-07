@@ -14,40 +14,45 @@ import { Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 
 const email = 'tomi@gmail.com';
 const password = 'tomi123';
+const URL = 'http://localhost:3001/rickandmorty/login/';
 
 function App() {
    const[characters, setCharacters] = useState([]);
    const location = useLocation();
    const [access, setAccess] = useState(false);
    const navigate = useNavigate();
+   
 
-   const login = (userData) => {
-      const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
-      axios(URL + `?email=${email}&password=${password}`)
-      .then(({ data }) => {
+
+   const login = async (userData) => {
+      try { 
+         const { email, password } = userData;
+         const { data } = await axios(URL + `?email=${email}&password=${password}`)
          const { access } = data;
+
          setAccess(access);
          access && navigate('/home');
-      });
-   }
 
+      } catch (error) {
+         console.log(error.message);
+      }
+   }
 
    useEffect(() => {
       !access && navigate('/');
    }, [access]);
    
-   const onSearch = (id) => {
-      axios(`http://localhost:3001/rickandmorty/character/${id}`)
-      .then(response => response.data)
-      .then((data) => {
+   const onSearch = async (id) => {
+      try {
+         const { data } = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
-         } else {
-            window.alert('¡No hay personajes con este ID!');
-         }
-      });
+         } 
+      } catch (error) {
+         alert('¡No hay personajes con este ID!');
+      }
    }
+
    const onClose = (id) => {
       const newCharacters = characters.filter((character)=> character.id !== +id);
       setCharacters(newCharacters);
