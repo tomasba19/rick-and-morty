@@ -30,9 +30,11 @@ export default function Form({ login }){
 
 
     return(
+        <div className="landing">
         <form onSubmit={handleOnSubmit}>
             <div className="titulo">Rick And Morty</div>
-            
+            <div className="login">
+                <div className="emailpassw">
             <label htmlFor="email">Email: </label>
             <input name="email" type="email" placeholder="Your email adress"
             value={userData.email} onChange={handleOnChange}/>
@@ -45,6 +47,8 @@ export default function Form({ login }){
             {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
             <br />
             <button disabled={!userData.email || !userData.password || errors.email || errors.password}>Submit</button>
+        </div></div>
         </form>
+        </div>
     )
 }

@@ -1,7 +1,9 @@
 import Card from '../Card/Card';
 import './Cards.css'
+
+
 export default function Cards({characters, onClose}) {
-   
+  
    return(
    
    <div className='cards'>
@@ -22,5 +24,7 @@ export default function Cards({characters, onClose}) {
       )
       }
    )}
+   
 </div>);
 }
+

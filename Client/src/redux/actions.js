@@ -1,4 +1,4 @@
-import { ADD_FAV, REMOVE_FAV , FILTER, ORDER} from "./actions-types"
+import { ADD_FAV, REMOVE_FAV , FILTER, ORDER, PREV, NEXT} from "./actions-types"
 import axios from "axios";
 
 export const addFav = (character) => {
@@ -42,3 +42,16 @@ export const filterCards = (gender) => {
 export const orderCards = (order) => {
     return {type: ORDER, payload: order}
 }
+
+
+export function prev() {
+   return {
+     type: PREV,
+   };
+ }
+ export function next() {
+   return {
+     type: NEXT,
+   };
+ }
+ 

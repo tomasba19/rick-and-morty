@@ -1,4 +1,4 @@
-import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./actions-types";
+import { ADD_FAV, REMOVE_FAV, FILTER, ORDER, PREV, NEXT} from "./actions-types";
 
 
 const initialState = {
@@ -38,6 +38,16 @@ const reducer = (state = initialState, {type, payload}) => {
                 ? allCharactersCopy.sort((a,b) => a.id - b.id)
                 : allCharactersCopy.sort((a,b) => b.id - a.id)
             }
+        case PREV:
+            return {
+                ...state,
+                numPage: state.numPage - 1,
+                };
+        case NEXT:
+            return {
+                ...state,
+                numPage: state.numPage + 1,
+            };
         
         default:
             return{...state};

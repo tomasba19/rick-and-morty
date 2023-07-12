@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.SobreMi {
+    justify-content: center;
+    align-items: center;
+    margin: 150px 60px;
+    padding: 28px 20px;
+    height: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+
+.info h3{
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+.info h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

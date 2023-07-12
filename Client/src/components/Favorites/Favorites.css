@@ -1,0 +1,44 @@
+.favoritos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 80px;
+}
+.seleccion{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    justify-content: space-between;
+    margin-left: 40% ;
+}
+.asdes{
+    border-radius: 8px;
+    padding: 5px;
+    padding-top: 2.5px;
+    margin: 6px;
+    margin-right: 60px;
+    background-color: silver;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    width: 105px;
+    height: 40px; 
+}
+.genders{
+    border-radius: 8px;
+    padding: 5px;
+    padding-top: 2.5px;
+    margin: 6px;
+    margin-right: 60px;
+    background-color: silver;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    width: 105px;
+    height: 40px; 
+}
+.select{
+    margin-right: 20%;
+
+}

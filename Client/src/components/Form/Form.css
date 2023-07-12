@@ -10,4 +10,49 @@
    z-index: 50;
    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.884);
    padding-bottom: 20px;
+   margin-left: 70px;
+   
 }
+
+/*
+.login{
+   background-color: rgba(255, 255, 255, 0.788);
+   width: 300px;
+   height: 200px;
+   -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+   box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+   align-items: center;
+
+}
+*/
+
+.login{
+   display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  border-radius: 4px;
+  width: 100%;
+  margin: 40px;
+  
+}
+.landing{
+   background-image: url('../../Images/Loginimage.jpg');
+   background-size: cover;
+   height: 100%;
+   width: 100%;
+   
+}
+.emailpassw{
+   display: flex;
+   flex-direction: column;
+   margin-top: 110px;
+   margin-left: 80px;
+   background-color: rgba(255, 248, 248, 0.568);
+   padding: 40px;
+   border-radius: 4px;
+   border: 1px rgb(168, 167, 167) solid;
+   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+ }

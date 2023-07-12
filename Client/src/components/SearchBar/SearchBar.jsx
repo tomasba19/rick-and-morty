@@ -11,12 +11,14 @@ export default function SearchBar({ onSearch }) {
 
    return (
       <div className="search">
+         <div className="busqueda">
          <input type='search'
                 onChange={handleChange}
                 value={id}
                 placeholder="Search by ID"
          />
          <button onClick={() =>{onSearch(id); setId('')}}>Search!</button> 
+         </div>
       </div>
       
    );

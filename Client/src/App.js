@@ -62,11 +62,7 @@ return (
    
       <div className='App'>
          {location.pathname !== '/' ? <NavBar onSearch={onSearch} access={access} setAccess={setAccess}/> : null}
-         <div className="pickle">
-               <a href="https://www.youtube.com/watch?v=ML5UI-0JS_Q" target="_blank" rel="noopener noreferrer">
-               <button>I'M PICKLE RICK!</button>
-               </a>    
-         </div>
+         
          
             <Routes>
                <Route path={'/'} element={<Form login={login} />}/>
