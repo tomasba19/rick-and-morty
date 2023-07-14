@@ -1,28 +1,63 @@
+const { User, Favorite } = require("../DB_connection")
 
-let myFavorites = [];
+//let myFavorites = [];
 
-const postFav = (req, res) => {
+const postFav = async (req, res) => {
     try {
-        const character = req.body;
-        const characterFound = myFavorites.find(fav => fav.id === character.id);
+        const { id, status, name, species, origin, image, gender } = req.body;
 
-        if(characterFound) throw Error('Ya fue agregado a favoritos')
-
-            myFavorites.push(character);
-            return res.status(200).json(myFavorites);
+        if (id === "RELOAD") {
+            const favorites = await Favorite.findAll();
+            return res.status(200).json(favorites);
+          }
+      
+          if (!id || !name || !image) {
+            return res
+              .status(404)
+              .json({ message: "error, not found create fav" });
+          }
+          const character = {
+            id,
+            status,
+            name,
+            species,
+            origin: origin?.name,
+            image,
+            gender,
+          };
+          
+          const newChar = await Favorite.create(character);
+      
+          const favorites = await Favorite.findAll();
+          res.status(200).json(favorites);
 
     } catch (error) {
-        res.status(404).send(error.message)
+        res.status(404).json({ message: error });
     }
 }
 
-const deleteFav = (req, res) => {
-    const { id } = req.params;
-
-    myFavorites = myFavorites.filter((favorite) => favorite.id !== +id); 
-    // filtro el character con el id que me llega y retorno el array nuevo
-
-    return res.status(200).json(myFavorites);
+const deleteFav = async (req, res) => {
+    try {
+        const { id } = req.params;
+    const char = await Favorite.findByPk(id);
+    if (char) {
+      await Favorite.destroy({
+        where: {
+          id,
+        },
+      });
+      const favorites = await Favorite.findAll();
+      res.status(200).json(favorites);
+    } else {
+      res
+        .status(500)
+        .json({ message: "el character ya ha sido eliminado" });
+    }
+        
+    } catch (error) {
+        res.status(500).json({ message: error });
+    }
+    
 }
 
 

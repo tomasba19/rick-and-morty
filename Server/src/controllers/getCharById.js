@@ -1,7 +1,23 @@
 const express = require('express')
 const axios = require('axios');
-const URL = "https://rickandmortyapi.com/api/character/"
+const URL = "https://rickandmortyapi.com/api/character/";
 
+const EMAIL_USER = "tomi@gmail.com";
+const PASSWORD_USER = "tomi123";
+
+const login = function (req, res) {
+    const { password, email } = req.query;
+    if (!password || !email) {
+      //TODO: TESTING <-> fix error to -> .json({ access: false })
+      return res.status(400).json({ access: false });
+    }
+    if (password === PASSWORD_USER && email === EMAIL_USER) {
+      res.status(200).json({ access: true });
+    } else {
+      //TODO: TESTING <-> fix error to -> .json({ access: false })
+      res.status(200).json({ access: false });
+    }
+  };
 
 const getCharById = async (req, res) => {
     try {
@@ -30,7 +46,8 @@ const getCharById = async (req, res) => {
 
 
 module.exports = {
-    getCharById
+    getCharById,
+    login,
 };
 
 
